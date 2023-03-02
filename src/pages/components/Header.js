@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaBars, FaWindowClose } from "react-icons/fa";
@@ -31,7 +32,7 @@ const Header = () => {
             href={"/"}
             className="text-4xl cursor-pointer text-white font-bold"
           >
-            <span className="text-yellow-500">Amit</span> Singha
+            <Image src='https://i.ibb.co/W6rgGpX/aa.png' alt="" width={100} height={80}/>
           </Link>
           <span
             onClick={() => setOpen(!open)}
@@ -42,7 +43,7 @@ const Header = () => {
         </div>
         <ul
           className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:bg-transparent  left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? "top-20 bg-[#3D3E42] z-1 w-4/5 left-12 rounded-md" : "top-[-490px]"
+            open ? "top-20 bg-[#3D3E42] z-1 w-4/5 rounded-md" : "top-[-490px]"
           }`}
         >
           <li className="mx-4 my-6 md:my-0">
